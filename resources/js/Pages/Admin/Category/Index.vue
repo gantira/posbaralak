@@ -14,7 +14,7 @@
         <v-card>
 
             <v-card-title>
-                <inertia-link :href="route('admin.users.create')">
+                <inertia-link :href="route('admin.categories.create')">
                     <v-btn
                         small
                         color="primary"
@@ -33,7 +33,7 @@
 
             <v-data-table
                 :headers="headers"
-                :items="users"
+                :items="categories"
                 item-key="id"
                 :search="search"
             >
@@ -64,7 +64,7 @@
 import Admin from "@/Layouts/Admin";
 
 export default {
-    props: ["users"],
+    props: ["categories"],
 
     components: {
         Admin,
@@ -78,7 +78,7 @@ export default {
                 align: "start",
                 value: "name",
             },
-            { text: "Email", value: "email" },
+            { text: "Slug", value: "slug" },
             {
                 text: "Actions",
                 align: "end",
@@ -90,10 +90,10 @@ export default {
 
     methods: {
         edit(item) {
-            this.$inertia.get(route("admin.users.edit", item));
+            this.$inertia.get(route("admin.categories.edit", item));
         },
         destroy(item) {
-            this.$inertia.delete(route("admin.users.delete", item), {
+            this.$inertia.delete(route("admin.categories.delete", item), {
                 onBefore: () => confirm("Are you sure?"),
             });
         },

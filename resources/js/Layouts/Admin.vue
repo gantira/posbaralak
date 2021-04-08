@@ -107,9 +107,14 @@ export default {
                     path: route("dashboard"),
                 },
                 {
-                    text: "User",
+                    text: "User Management",
                     icon: "mdi-account-multiple",
                     path: route("admin.users.index"),
+                },
+                {
+                    text: "Category",
+                    icon: "mdi-tag",
+                    path: route("admin.categories.index"),
                 },
             ],
             right: null,

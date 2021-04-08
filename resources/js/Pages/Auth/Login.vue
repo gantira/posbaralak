@@ -4,6 +4,14 @@
             align-center
             justify-center
         >
+        <div
+            v-if="status"
+            class="mb-4 font-medium text-sm text-green-600"
+        >
+            {{ status }}
+        </div>
+
+
             <v-flex
                 xs12
                 sm8

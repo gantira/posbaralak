@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -36,6 +37,17 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::delete('{user}', [UserController::class, 'destroy'])->name('delete');
         Route::put('{user}', [UserController::class, 'update'])->name('update');
     });
+
+    Route::prefix('categories')->name('categories.')->group(function () {
+        Route::get('', [CategoryController::class, 'index'])->name('index');
+        Route::post('', [CategoryController::class, 'store'])->name('store');
+        Route::get('create', [CategoryController::class, 'create'])->name('create');
+        Route::get('{category}/edit', [CategoryController::class, 'edit'])->name('edit');
+        Route::delete('{category}', [CategoryController::class, 'destroy'])->name('delete');
+        Route::put('{category}', [CategoryController::class, 'update'])->name('update');
+    });
+
+
 });
 
 
