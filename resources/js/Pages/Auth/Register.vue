@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <guest>
         <breeze-validation-errors class="mb-4" />
 
         <form @submit.prevent="submit">
@@ -81,7 +81,7 @@
                 </breeze-button>
             </div>
         </form>
-    </div>
+    </guest>
 </template>
 
 <script>
@@ -90,6 +90,7 @@ import BreezeGuestLayout from "@/Layouts/Guest";
 import BreezeInput from "@/Components/Input";
 import BreezeLabel from "@/Components/Label";
 import BreezeValidationErrors from "@/Components/ValidationErrors";
+import Guest from "@/Layouts/Guest";
 
 export default {
     layout: BreezeGuestLayout,
@@ -99,6 +100,7 @@ export default {
         BreezeInput,
         BreezeLabel,
         BreezeValidationErrors,
+        Guest,
     },
 
     data() {
