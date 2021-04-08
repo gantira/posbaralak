@@ -28658,52 +28658,62 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "admin",
-    [
-      [
-        _c(
-          "v-form",
-          {
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.submit($event)
-              }
-            }
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [_vm._v("New Category")]
           },
-          [
-            _c("v-text-field", {
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c(
+        "v-form",
+        {
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submit($event)
+            }
+          }
+        },
+        [
+          _c("v-text-field", {
+            attrs: {
+              label: "Name",
+              type: "text",
+              "error-messages": _vm.errors.name
+            },
+            model: {
+              value: _vm.form.name,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "name", $$v)
+              },
+              expression: "form.name"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mr-4",
               attrs: {
-                label: "Name",
-                type: "text",
-                "error-messages": _vm.errors.name
-              },
-              model: {
-                value: _vm.form.name,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "name", $$v)
-                },
-                expression: "form.name"
+                color: "success",
+                type: "submit",
+                disabled: _vm.form.processing
               }
-            }),
-            _vm._v(" "),
-            _c(
-              "v-btn",
-              {
-                staticClass: "mr-4",
-                attrs: {
-                  color: "success",
-                  type: "submit",
-                  disabled: _vm.form.processing
-                }
-              },
-              [_vm._v("\n                Submit\n            ")]
-            )
-          ],
-          1
-        )
-      ]
+            },
+            [_vm._v("\n            Submit\n        ")]
+          )
+        ],
+        1
+      )
     ],
-    2
+    1
   )
 }
 var staticRenderFns = []
@@ -28731,52 +28741,62 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "admin",
-    [
-      [
-        _c(
-          "v-form",
-          {
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.submit($event)
-              }
-            }
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [_vm._v("Edit Category")]
           },
-          [
-            _c("v-text-field", {
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c(
+        "v-form",
+        {
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submit($event)
+            }
+          }
+        },
+        [
+          _c("v-text-field", {
+            attrs: {
+              label: "Name",
+              type: "text",
+              "error-messages": _vm.errors.name
+            },
+            model: {
+              value: _vm.form.name,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "name", $$v)
+              },
+              expression: "form.name"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mr-4",
               attrs: {
-                label: "Name",
-                type: "text",
-                "error-messages": _vm.errors.name
-              },
-              model: {
-                value: _vm.form.name,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "name", $$v)
-                },
-                expression: "form.name"
+                color: "info",
+                type: "submit",
+                disabled: _vm.form.processing
               }
-            }),
-            _vm._v(" "),
-            _c(
-              "v-btn",
-              {
-                staticClass: "mr-4",
-                attrs: {
-                  color: "info",
-                  type: "submit",
-                  disabled: _vm.form.processing
-                }
-              },
-              [_vm._v("\n                Update\n            ")]
-            )
-          ],
-          1
-        )
-      ]
+            },
+            [_vm._v("\n            Update\n        ")]
+          )
+        ],
+        1
+      )
     ],
-    2
+    1
   )
 }
 var staticRenderFns = []
@@ -28964,52 +28984,62 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "admin",
-    [
-      [
-        _c(
-          "v-form",
-          {
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.submit($event)
-              }
-            }
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [_vm._v("New User")]
           },
-          [
-            _c("v-text-field", {
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c(
+        "v-form",
+        {
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submit($event)
+            }
+          }
+        },
+        [
+          _c("v-text-field", {
+            attrs: {
+              label: "Name",
+              type: "text",
+              "error-messages": _vm.errors.name
+            },
+            model: {
+              value: _vm.form.name,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "name", $$v)
+              },
+              expression: "form.name"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mr-4",
               attrs: {
-                label: "Name",
-                type: "text",
-                "error-messages": _vm.errors.name
-              },
-              model: {
-                value: _vm.form.name,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "name", $$v)
-                },
-                expression: "form.name"
+                color: "success",
+                type: "submit",
+                disabled: _vm.form.processing
               }
-            }),
-            _vm._v(" "),
-            _c(
-              "v-btn",
-              {
-                staticClass: "mr-4",
-                attrs: {
-                  color: "success",
-                  type: "submit",
-                  disabled: _vm.form.processing
-                }
-              },
-              [_vm._v("\n                Submit\n            ")]
-            )
-          ],
-          1
-        )
-      ]
+            },
+            [_vm._v("\n            Submit\n        ")]
+          )
+        ],
+        1
+      )
     ],
-    2
+    1
   )
 }
 var staticRenderFns = []
@@ -29037,52 +29067,62 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "admin",
-    [
-      [
-        _c(
-          "v-form",
-          {
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.submit($event)
-              }
-            }
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [_vm._v("Edit User")]
           },
-          [
-            _c("v-text-field", {
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c(
+        "v-form",
+        {
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submit($event)
+            }
+          }
+        },
+        [
+          _c("v-text-field", {
+            attrs: {
+              label: "Name",
+              type: "text",
+              "error-messages": _vm.errors.name
+            },
+            model: {
+              value: _vm.form.name,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "name", $$v)
+              },
+              expression: "form.name"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mr-4",
               attrs: {
-                label: "Name",
-                type: "text",
-                "error-messages": _vm.errors.name
-              },
-              model: {
-                value: _vm.form.name,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "name", $$v)
-                },
-                expression: "form.name"
+                color: "info",
+                type: "submit",
+                disabled: _vm.form.processing
               }
-            }),
-            _vm._v(" "),
-            _c(
-              "v-btn",
-              {
-                staticClass: "mr-4",
-                attrs: {
-                  color: "info",
-                  type: "submit",
-                  disabled: _vm.form.processing
-                }
-              },
-              [_vm._v("\n                Update\n            ")]
-            )
-          ],
-          1
-        )
-      ]
+            },
+            [_vm._v("\n            Update\n        ")]
+          )
+        ],
+        1
+      )
     ],
-    2
+    1
   )
 }
 var staticRenderFns = []
@@ -29270,93 +29310,103 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "admin",
-    [
-      [
-        _c(
-          "v-form",
-          {
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.submit($event)
-              }
-            }
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [_vm._v("New User")]
           },
-          [
-            _c("v-text-field", {
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c(
+        "v-form",
+        {
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submit($event)
+            }
+          }
+        },
+        [
+          _c("v-text-field", {
+            attrs: {
+              label: "Name",
+              type: "text",
+              "error-messages": _vm.errors.name
+            },
+            model: {
+              value: _vm.form.name,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "name", $$v)
+              },
+              expression: "form.name"
+            }
+          }),
+          _vm._v(" "),
+          _c("v-text-field", {
+            attrs: {
+              label: "E-mail",
+              type: "text",
+              "error-messages": _vm.errors.email
+            },
+            model: {
+              value: _vm.form.email,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "email", $$v)
+              },
+              expression: "form.email"
+            }
+          }),
+          _vm._v(" "),
+          _c("v-text-field", {
+            attrs: {
+              label: "Password",
+              type: "password",
+              "error-messages": _vm.errors.password
+            },
+            model: {
+              value: _vm.form.password,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "password", $$v)
+              },
+              expression: "form.password"
+            }
+          }),
+          _vm._v(" "),
+          _c("v-text-field", {
+            attrs: { label: "Password Confirmation", type: "password" },
+            model: {
+              value: _vm.form.password_confirmation,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "password_confirmation", $$v)
+              },
+              expression: "form.password_confirmation"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mr-4",
               attrs: {
-                label: "Name",
-                type: "text",
-                "error-messages": _vm.errors.name
-              },
-              model: {
-                value: _vm.form.name,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "name", $$v)
-                },
-                expression: "form.name"
+                color: "success",
+                type: "submit",
+                disabled: _vm.form.processing
               }
-            }),
-            _vm._v(" "),
-            _c("v-text-field", {
-              attrs: {
-                label: "E-mail",
-                type: "text",
-                "error-messages": _vm.errors.email
-              },
-              model: {
-                value: _vm.form.email,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "email", $$v)
-                },
-                expression: "form.email"
-              }
-            }),
-            _vm._v(" "),
-            _c("v-text-field", {
-              attrs: {
-                label: "Password",
-                type: "password",
-                "error-messages": _vm.errors.password
-              },
-              model: {
-                value: _vm.form.password,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "password", $$v)
-                },
-                expression: "form.password"
-              }
-            }),
-            _vm._v(" "),
-            _c("v-text-field", {
-              attrs: { label: "Password Confirmation", type: "password" },
-              model: {
-                value: _vm.form.password_confirmation,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "password_confirmation", $$v)
-                },
-                expression: "form.password_confirmation"
-              }
-            }),
-            _vm._v(" "),
-            _c(
-              "v-btn",
-              {
-                staticClass: "mr-4",
-                attrs: {
-                  color: "success",
-                  type: "submit",
-                  disabled: _vm.form.processing
-                }
-              },
-              [_vm._v("\n                Submit\n            ")]
-            )
-          ],
-          1
-        )
-      ]
+            },
+            [_vm._v("\n            Submit\n        ")]
+          )
+        ],
+        1
+      )
     ],
-    2
+    1
   )
 }
 var staticRenderFns = []
@@ -29384,93 +29434,103 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "admin",
-    [
-      [
-        _c(
-          "v-form",
-          {
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.submit($event)
-              }
-            }
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [_vm._v("Edit User")]
           },
-          [
-            _c("v-text-field", {
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c(
+        "v-form",
+        {
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submit($event)
+            }
+          }
+        },
+        [
+          _c("v-text-field", {
+            attrs: {
+              label: "Name",
+              type: "text",
+              "error-messages": _vm.errors.name
+            },
+            model: {
+              value: _vm.form.name,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "name", $$v)
+              },
+              expression: "form.name"
+            }
+          }),
+          _vm._v(" "),
+          _c("v-text-field", {
+            attrs: {
+              label: "E-mail",
+              type: "text",
+              "error-messages": _vm.errors.email
+            },
+            model: {
+              value: _vm.form.email,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "email", $$v)
+              },
+              expression: "form.email"
+            }
+          }),
+          _vm._v(" "),
+          _c("v-text-field", {
+            attrs: {
+              label: "Password",
+              type: "password",
+              "error-messages": _vm.errors.password
+            },
+            model: {
+              value: _vm.form.password,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "password", $$v)
+              },
+              expression: "form.password"
+            }
+          }),
+          _vm._v(" "),
+          _c("v-text-field", {
+            attrs: { label: "Password Confirmation", type: "password" },
+            model: {
+              value: _vm.form.password_confirmation,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "password_confirmation", $$v)
+              },
+              expression: "form.password_confirmation"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mr-4",
               attrs: {
-                label: "Name",
-                type: "text",
-                "error-messages": _vm.errors.name
-              },
-              model: {
-                value: _vm.form.name,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "name", $$v)
-                },
-                expression: "form.name"
+                color: "info",
+                type: "submit",
+                disabled: _vm.form.processing
               }
-            }),
-            _vm._v(" "),
-            _c("v-text-field", {
-              attrs: {
-                label: "E-mail",
-                type: "text",
-                "error-messages": _vm.errors.email
-              },
-              model: {
-                value: _vm.form.email,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "email", $$v)
-                },
-                expression: "form.email"
-              }
-            }),
-            _vm._v(" "),
-            _c("v-text-field", {
-              attrs: {
-                label: "Password",
-                type: "password",
-                "error-messages": _vm.errors.password
-              },
-              model: {
-                value: _vm.form.password,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "password", $$v)
-                },
-                expression: "form.password"
-              }
-            }),
-            _vm._v(" "),
-            _c("v-text-field", {
-              attrs: { label: "Password Confirmation", type: "password" },
-              model: {
-                value: _vm.form.password_confirmation,
-                callback: function($$v) {
-                  _vm.$set(_vm.form, "password_confirmation", $$v)
-                },
-                expression: "form.password_confirmation"
-              }
-            }),
-            _vm._v(" "),
-            _c(
-              "v-btn",
-              {
-                staticClass: "mr-4",
-                attrs: {
-                  color: "info",
-                  type: "submit",
-                  disabled: _vm.form.processing
-                }
-              },
-              [_vm._v("\n                Update\n            ")]
-            )
-          ],
-          1
-        )
-      ]
+            },
+            [_vm._v("\n            Update\n        ")]
+          )
+        ],
+        1
+      )
     ],
-    2
+    1
   )
 }
 var staticRenderFns = []

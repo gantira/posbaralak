@@ -1,25 +1,25 @@
 <template>
     <admin>
-        <template>
-            <v-form @submit.prevent="submit">
-                <v-text-field
-                    v-model="form.name"
-                    label="Name"
-                    type="text"
-                    :error-messages="errors.name"
-                ></v-text-field>
+        <template v-slot:header>Edit User</template>
 
-                <v-btn
-                    color="info"
-                    class="mr-4"
-                    type="submit"
-                    :disabled="form.processing"
-                >
-                    Update
-                </v-btn>
+        <v-form @submit.prevent="submit">
+            <v-text-field
+                v-model="form.name"
+                label="Name"
+                type="text"
+                :error-messages="errors.name"
+            ></v-text-field>
 
-            </v-form>
-        </template>
+            <v-btn
+                color="info"
+                class="mr-4"
+                type="submit"
+                :disabled="form.processing"
+            >
+                Update
+            </v-btn>
+
+        </v-form>
 
     </admin>
 </template>

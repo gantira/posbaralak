@@ -1,45 +1,45 @@
 <template>
     <admin>
-        <template>
-            <v-form @submit.prevent="submit">
-                <v-text-field
-                    v-model="form.name"
-                    label="Name"
-                    type="text"
-                    :error-messages="errors.name"
-                ></v-text-field>
+        <template v-slot:header>New User</template>
 
-                <v-text-field
-                    v-model="form.email"
-                    label="E-mail"
-                    type="text"
-                    :error-messages="errors.email"
-                ></v-text-field>
+        <v-form @submit.prevent="submit">
+            <v-text-field
+                v-model="form.name"
+                label="Name"
+                type="text"
+                :error-messages="errors.name"
+            ></v-text-field>
 
-                <v-text-field
-                    v-model="form.password"
-                    label="Password"
-                    type="password"
-                    :error-messages="errors.password"
-                ></v-text-field>
+            <v-text-field
+                v-model="form.email"
+                label="E-mail"
+                type="text"
+                :error-messages="errors.email"
+            ></v-text-field>
 
-                <v-text-field
-                    v-model="form.password_confirmation"
-                    label="Password Confirmation"
-                    type="password"
-                ></v-text-field>
+            <v-text-field
+                v-model="form.password"
+                label="Password"
+                type="password"
+                :error-messages="errors.password"
+            ></v-text-field>
 
-                <v-btn
-                    color="success"
-                    class="mr-4"
-                    type="submit"
-                    :disabled="form.processing"
-                >
-                    Submit
-                </v-btn>
+            <v-text-field
+                v-model="form.password_confirmation"
+                label="Password Confirmation"
+                type="password"
+            ></v-text-field>
 
-            </v-form>
-        </template>
+            <v-btn
+                color="success"
+                class="mr-4"
+                type="submit"
+                :disabled="form.processing"
+            >
+                Submit
+            </v-btn>
+
+        </v-form>
 
     </admin>
 </template>
