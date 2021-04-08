@@ -1,5 +1,7 @@
 <template>
     <admin>
+        <template v-slot:header>Table</template>
+
         <v-alert
             text
             dense

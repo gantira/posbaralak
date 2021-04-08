@@ -53,7 +53,9 @@
             flat
         >
 
-            <v-toolbar-title>Dashboard</v-toolbar-title>
+            <v-toolbar-title>
+                <slot name="header">Header</slot>
+            </v-toolbar-title>
 
             <v-spacer></v-spacer>
 

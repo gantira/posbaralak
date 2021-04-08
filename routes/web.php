@@ -28,7 +28,7 @@ Route::get('/', function () {
 });
 
 
-Route::prefix('admin')->name('admin.')->group(function () {
+Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(function () {
 
     Route::prefix('users')->name('users.')->group(function () {
         Route::get('', [UserController::class, 'index'])->name('index');

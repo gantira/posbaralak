@@ -1,5 +1,7 @@
 <template>
     <admin>
+        <template v-slot:header>Dashboard</template>
+
         <v-row no-gutters>
             <v-col cols="4">
                 <v-card

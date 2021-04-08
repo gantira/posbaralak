@@ -1,5 +1,7 @@
 <template>
     <admin>
+        <template v-slot:header>Category</template>
+
         <v-alert
             text
             dense

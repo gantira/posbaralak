@@ -2126,6 +2126,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -2329,6 +2331,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
+//
+//
 //
 //
 //
@@ -2630,6 +2634,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ["tables"],
@@ -2853,6 +2859,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
+//
+//
 //
 //
 //
@@ -3750,6 +3758,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
+//
+//
 //
 //
 //
@@ -28533,7 +28543,7 @@ var render = function() {
         "v-app-bar",
         { attrs: { app: "", flat: "" } },
         [
-          _c("v-toolbar-title", [_vm._v("Dashboard")]),
+          _c("v-toolbar-title", [_vm._t("header", [_vm._v("Header")])], 2),
           _vm._v(" "),
           _c("v-spacer"),
           _vm._v(" "),
@@ -28794,7 +28804,19 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "admin",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [_vm._v("Category")]
+          },
+          proxy: true
+        }
+      ])
+    },
     [
+      _vm._v(" "),
       _vm.$page.props.flash.message
         ? _c(
             "v-alert",
@@ -29088,7 +29110,19 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "admin",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [_vm._v("Table")]
+          },
+          proxy: true
+        }
+      ])
+    },
     [
+      _vm._v(" "),
       _vm.$page.props.flash.message
         ? _c(
             "v-alert",
@@ -29464,7 +29498,19 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "admin",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [_vm._v("User")]
+          },
+          proxy: true
+        }
+      ])
+    },
     [
+      _vm._v(" "),
       _vm.$page.props.flash.message
         ? _c(
             "v-alert",
@@ -30520,7 +30566,19 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "admin",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [_vm._v("Dashboard")]
+          },
+          proxy: true
+        }
+      ])
+    },
     [
+      _vm._v(" "),
       _c(
         "v-row",
         { attrs: { "no-gutters": "" } },
