@@ -116,6 +116,11 @@ export default {
                     icon: "mdi-tag",
                     path: route("admin.categories.index"),
                 },
+                {
+                    text: "Table",
+                    icon: "mdi-table",
+                    path: route("admin.tables.index"),
+                },
             ],
             right: null,
         };
