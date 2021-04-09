@@ -1,5 +1,5 @@
 <template>
-    <admin>
+    <admin-layout>
         <template v-slot:header>Category</template>
 
         <v-alert
@@ -59,18 +59,12 @@
             </v-data-table>
         </v-card>
 
-    </admin>
+    </admin-layout>
 </template>
 
 <script>
-import Admin from "@/Layouts/Admin";
-
 export default {
     props: ["categories"],
-
-    components: {
-        Admin,
-    },
 
     data: () => ({
         search: "",

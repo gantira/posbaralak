@@ -1,5 +1,5 @@
 <template>
-    <admin>
+    <admin-layout>
         <template v-slot:header>Edit User</template>
 
         <v-form @submit.prevent="submit">
@@ -34,6 +34,7 @@
                 color="info"
                 class="mr-4"
                 type="submit"
+                :loading="form.processing"
                 :disabled="form.processing"
             >
                 Update
@@ -41,20 +42,16 @@
 
         </v-form>
 
-    </admin>
+    </admin-layout>
 </template>
 
 <script>
-import Admin from "@/Layouts/Admin";
-
 export default {
     props: {
         user: Object,
         errors: Object,
     },
-    components: {
-        Admin,
-    },
+
     data() {
         return {
             form: this.$inertia.form({
@@ -63,6 +60,7 @@ export default {
             }),
         };
     },
+
     methods: {
         submit() {
             this.form.put(this.route("admin.users.update", this.user));
@@ -70,6 +68,3 @@ export default {
     },
 };
 </script>
-
-<style>
-</style>

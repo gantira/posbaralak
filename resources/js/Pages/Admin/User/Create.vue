@@ -1,5 +1,5 @@
 <template>
-    <admin>
+    <admin-layout>
         <template v-slot:header>New User</template>
 
         <v-form @submit.prevent="submit">
@@ -34,6 +34,7 @@
                 color="success"
                 class="mr-4"
                 type="submit"
+                :loading="form.processing"
                 :disabled="form.processing"
             >
                 Submit
@@ -41,20 +42,16 @@
 
         </v-form>
 
-    </admin>
+    </admin-layout>
 </template>
 
 <script>
-import Admin from "@/Layouts/Admin";
-
 export default {
     props: {
         user: Object,
         errors: Object,
     },
-    components: {
-        Admin,
-    },
+
     data() {
         return {
             form: this.$inertia.form({
@@ -66,6 +63,7 @@ export default {
             }),
         };
     },
+
     methods: {
         submit() {
             this.form.post(this.route("admin.users.store"));
@@ -73,6 +71,3 @@ export default {
     },
 };
 </script>
-
-<style>
-</style>

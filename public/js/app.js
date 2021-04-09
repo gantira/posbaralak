@@ -1887,12 +1887,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
+    color: {
+      type: String,
+      "default": "success"
+    },
     type: {
       type: String,
-      "default": 'submit'
-    }
+      "default": "submit"
+    },
+    classes: "",
+    loading: false
   }
 });
 
@@ -2205,7 +2217,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
 //
 //
 //
@@ -2225,21 +2236,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     category: Object,
     errors: Object
-  },
-  components: {
-    Admin: _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__.default
   },
   data: function data() {
     return {
@@ -2268,7 +2268,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
 //
 //
 //
@@ -2294,14 +2293,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     category: Object,
     errors: Object
-  },
-  components: {
-    Admin: _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__.default
   },
   data: function data() {
     return {
@@ -2330,7 +2327,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
 //
 //
 //
@@ -2395,12 +2391,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ["categories"],
-  components: {
-    Admin: _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__.default
-  },
   data: function data() {
     return {
       search: "",
@@ -2446,7 +2438,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
 //
 //
 //
@@ -2473,14 +2464,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     table: Object,
     errors: Object
-  },
-  components: {
-    Admin: _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__.default
   },
   data: function data() {
     return {
@@ -2509,7 +2497,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
 //
 //
 //
@@ -2535,14 +2522,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     table: Object,
     errors: Object
-  },
-  components: {
-    Admin: _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__.default
   },
   data: function data() {
     return {
@@ -2571,7 +2555,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
 //
 //
 //
@@ -2636,12 +2619,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ["tables"],
-  components: {
-    Admin: _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__.default
-  },
   data: function data() {
     return {
       search: "",
@@ -2687,7 +2666,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
 //
 //
 //
@@ -2734,14 +2712,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     user: Object,
     errors: Object
-  },
-  components: {
-    Admin: _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__.default
   },
   data: function data() {
     return {
@@ -2774,7 +2749,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
 //
 //
 //
@@ -2821,14 +2795,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     user: Object,
     errors: Object
-  },
-  components: {
-    Admin: _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__.default
   },
   data: function data() {
     return {
@@ -2858,7 +2829,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
 //
 //
 //
@@ -2923,12 +2893,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ["users"],
-  components: {
-    Admin: _Layouts_Admin__WEBPACK_IMPORTED_MODULE_0__.default
-  },
   data: function data() {
     return {
       search: "",
@@ -4002,22 +3968,28 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/progress */ "./node_modules/@inertiajs/progress/dist/index.js");
 /* harmony import */ var _inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue */ "./node_modules/@inertiajs/inertia-vue/dist/index.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var _plugins_vuetify__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plugins/vuetify */ "./resources/js/plugins/vuetify.js");
+/* harmony import */ var _Components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/Button */ "./resources/js/Components/Button.vue");
+/* harmony import */ var _Layouts_Admin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Layouts/Admin */ "./resources/js/Layouts/Admin.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_3__.default.use(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_1__.plugin);
-vue__WEBPACK_IMPORTED_MODULE_3__.default.mixin({
+
+
+vue__WEBPACK_IMPORTED_MODULE_5__.default.use(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_1__.plugin);
+vue__WEBPACK_IMPORTED_MODULE_5__.default.mixin({
   methods: {
     route: route
   }
 });
+vue__WEBPACK_IMPORTED_MODULE_5__.default.component('button-submit', _Components_Button__WEBPACK_IMPORTED_MODULE_3__.default);
+vue__WEBPACK_IMPORTED_MODULE_5__.default.component('admin-layout', _Layouts_Admin__WEBPACK_IMPORTED_MODULE_4__.default);
 var el = document.getElementById('app');
-new vue__WEBPACK_IMPORTED_MODULE_3__.default({
+new vue__WEBPACK_IMPORTED_MODULE_5__.default({
   vuetify: _plugins_vuetify__WEBPACK_IMPORTED_MODULE_2__.default,
   render: function render(h) {
     return h(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_1__.App, {
@@ -28221,11 +28193,15 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "button",
+    "v-btn",
     {
-      staticClass:
-        "inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray transition ease-in-out duration-150",
-      attrs: { type: _vm.type }
+      class: _vm.classes,
+      attrs: {
+        color: _vm.color,
+        type: _vm.type,
+        loading: _vm.loading,
+        disabled: _vm.loading
+      }
     },
     [_vm._t("default")],
     2
@@ -28657,7 +28633,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "admin",
+    "admin-layout",
     {
       scopedSlots: _vm._u([
         {
@@ -28697,18 +28673,9 @@ var render = function() {
             }
           }),
           _vm._v(" "),
-          _c(
-            "v-btn",
-            {
-              staticClass: "mr-4",
-              attrs: {
-                color: "success",
-                type: "submit",
-                disabled: _vm.form.processing
-              }
-            },
-            [_vm._v("\n            Submit\n        ")]
-          )
+          _c("button-submit", { attrs: { loading: _vm.form.processing } }, [
+            _vm._v("Submit")
+          ])
         ],
         1
       )
@@ -28740,7 +28707,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "admin",
+    "admin-layout",
     {
       scopedSlots: _vm._u([
         {
@@ -28787,6 +28754,7 @@ var render = function() {
               attrs: {
                 color: "info",
                 type: "submit",
+                loading: _vm.form.processing,
                 disabled: _vm.form.processing
               }
             },
@@ -28823,7 +28791,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "admin",
+    "admin-layout",
     {
       scopedSlots: _vm._u([
         {
@@ -28983,13 +28951,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "admin",
+    "admin-layout",
     {
       scopedSlots: _vm._u([
         {
           key: "header",
           fn: function() {
-            return [_vm._v("New User")]
+            return [_vm._v("New Table")]
           },
           proxy: true
         }
@@ -29030,6 +28998,7 @@ var render = function() {
               attrs: {
                 color: "success",
                 type: "submit",
+                loading: _vm.form.processing,
                 disabled: _vm.form.processing
               }
             },
@@ -29066,13 +29035,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "admin",
+    "admin-layout",
     {
       scopedSlots: _vm._u([
         {
           key: "header",
           fn: function() {
-            return [_vm._v("Edit User")]
+            return [_vm._v("Edit Table")]
           },
           proxy: true
         }
@@ -29113,6 +29082,7 @@ var render = function() {
               attrs: {
                 color: "info",
                 type: "submit",
+                loading: _vm.form.processing,
                 disabled: _vm.form.processing
               }
             },
@@ -29149,7 +29119,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "admin",
+    "admin-layout",
     {
       scopedSlots: _vm._u([
         {
@@ -29309,7 +29279,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "admin",
+    "admin-layout",
     {
       scopedSlots: _vm._u([
         {
@@ -29397,6 +29367,7 @@ var render = function() {
               attrs: {
                 color: "success",
                 type: "submit",
+                loading: _vm.form.processing,
                 disabled: _vm.form.processing
               }
             },
@@ -29433,7 +29404,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "admin",
+    "admin-layout",
     {
       scopedSlots: _vm._u([
         {
@@ -29521,6 +29492,7 @@ var render = function() {
               attrs: {
                 color: "info",
                 type: "submit",
+                loading: _vm.form.processing,
                 disabled: _vm.form.processing
               }
             },
@@ -29557,7 +29529,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "admin",
+    "admin-layout",
     {
       scopedSlots: _vm._u([
         {

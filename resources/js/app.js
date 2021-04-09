@@ -4,9 +4,13 @@ import { InertiaProgress } from '@inertiajs/progress';
 import { App, plugin } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
 import vuetify from './plugins/vuetify'
+import ButtonSubmit from "@/Components/Button";
+import Admin from "@/Layouts/Admin";
 
 Vue.use(plugin)
 Vue.mixin({ methods: { route } })
+Vue.component('button-submit', ButtonSubmit)
+Vue.component('admin-layout', Admin)
 
 const el = document.getElementById('app')
 

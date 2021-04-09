@@ -1,5 +1,5 @@
 <template>
-    <admin>
+    <admin-layout>
         <template v-slot:header>User</template>
 
         <v-alert
@@ -59,18 +59,13 @@
             </v-data-table>
         </v-card>
 
-    </admin>
+    </admin-layout>
 </template>
 
 <script>
-import Admin from "@/Layouts/Admin";
 
 export default {
     props: ["users"],
-
-    components: {
-        Admin,
-    },
 
     data: () => ({
         search: "",
@@ -103,5 +98,3 @@ export default {
 };
 </script>
 
-<style>
-</style>
