@@ -1,6 +1,6 @@
 <template>
     <admin-layout>
-        <template v-slot:header>New Table</template>
+        <template v-slot:header>New Status</template>
 
         <v-form @submit.prevent="submit">
             <v-text-field
@@ -9,6 +9,14 @@
                 type="text"
                 :error-messages="errors.name"
             ></v-text-field>
+
+            <v-textarea
+                v-model="form.description"
+                label="Description"
+                clear-icon="mdi-close-circle"
+                clearable
+                :error-messages="errors.description"
+            ></v-textarea>
 
             <button-submit :loading="form.processing">Submit</button-submit>
 
@@ -21,7 +29,7 @@
 
 export default {
     props: {
-        table: Object,
+        status: Object,
         errors: Object,
     },
 
@@ -29,13 +37,14 @@ export default {
         return {
             form: this.$inertia.form({
                 name: "",
+                description: "",
             }),
         };
     },
 
     methods: {
         submit() {
-            this.form.post(this.route("admin.tables.store"));
+            this.form.post(this.route("admin.statuses.store"));
         },
     },
 };

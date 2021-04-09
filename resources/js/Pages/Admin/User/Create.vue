@@ -30,15 +30,7 @@
                 type="password"
             ></v-text-field>
 
-            <v-btn
-                color="success"
-                class="mr-4"
-                type="submit"
-                :loading="form.processing"
-                :disabled="form.processing"
-            >
-                Submit
-            </v-btn>
+            <button-submit :loading="form.processing">Submit</button-submit>
 
         </v-form>
 

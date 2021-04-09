@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\StatusController;
 use App\Http\Controllers\Admin\TableController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Foundation\Application;
@@ -55,6 +56,15 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(
         Route::get('{table}/edit', [TableController::class, 'edit'])->name('edit');
         Route::delete('{table}', [TableController::class, 'destroy'])->name('delete');
         Route::put('{table}', [TableController::class, 'update'])->name('update');
+    });
+
+    Route::prefix('statuses')->name('statuses.')->group(function () {
+        Route::get('', [StatusController::class, 'index'])->name('index');
+        Route::post('', [StatusController::class, 'store'])->name('store');
+        Route::get('create', [StatusController::class, 'create'])->name('create');
+        Route::get('{status}/edit', [StatusController::class, 'edit'])->name('edit');
+        Route::delete('{status}', [StatusController::class, 'destroy'])->name('delete');
+        Route::put('{status}', [StatusController::class, 'update'])->name('update');
     });
 
 

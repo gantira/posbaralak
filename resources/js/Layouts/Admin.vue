@@ -123,6 +123,11 @@ export default {
                     icon: "mdi-table",
                     path: route("admin.tables.index"),
                 },
+                {
+                    text: "Status",
+                    icon: "mdi-information",
+                    path: route("admin.statuses.index"),
+                },
             ],
             right: null,
         };

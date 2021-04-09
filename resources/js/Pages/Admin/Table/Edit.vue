@@ -10,15 +10,7 @@
                 :error-messages="errors.name"
             ></v-text-field>
 
-            <v-btn
-                color="info"
-                class="mr-4"
-                type="submit"
-                :loading="form.processing"
-                :disabled="form.processing"
-            >
-                Update
-            </v-btn>
+            <button-submit color="info" :loading="form.processing">Update</button-submit>
 
         </v-form>
 
