@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\StatusController;
 use App\Http\Controllers\Admin\TableController;
 use App\Http\Controllers\Admin\UserController;
@@ -65,6 +66,15 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(
         Route::get('{status}/edit', [StatusController::class, 'edit'])->name('edit');
         Route::delete('{status}', [StatusController::class, 'destroy'])->name('delete');
         Route::put('{status}', [StatusController::class, 'update'])->name('update');
+    });
+
+    Route::prefix('products')->name('products.')->group(function () {
+        Route::get('', [ProductController::class, 'index'])->name('index');
+        Route::post('', [ProductController::class, 'store'])->name('store');
+        Route::get('create', [ProductController::class, 'create'])->name('create');
+        Route::get('{product}/edit', [ProductController::class, 'edit'])->name('edit');
+        Route::delete('{product}', [ProductController::class, 'destroy'])->name('delete');
+        Route::put('{product}', [ProductController::class, 'update'])->name('update');
     });
 
 

@@ -29,7 +29,6 @@
 
 export default {
     props: {
-        status: Object,
         errors: Object,
     },
 

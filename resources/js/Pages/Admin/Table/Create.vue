@@ -21,7 +21,6 @@
 
 export default {
     props: {
-        table: Object,
         errors: Object,
     },
 

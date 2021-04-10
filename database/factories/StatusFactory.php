@@ -23,7 +23,7 @@ class StatusFactory extends Factory
     {
         return [
             'name' => $this->faker->randomElement(['Available', 'Unavailable']),
-            'description' => $this->faker->realText,
+            'description' => $this->faker->randomElement(['Status Table Tersedia', 'Status Table Tidak Tersedia']),
         ];
     }
 }

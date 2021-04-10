@@ -40,7 +40,6 @@
 <script>
 export default {
     props: {
-        user: Object,
         errors: Object,
     },
 

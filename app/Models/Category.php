@@ -24,4 +24,9 @@ class Category extends Model
     }
 
     protected $fillable = ['name', 'slug'];
+
+    public function categoryable()
+    {
+        return $this->morphTo();
+    }
 }

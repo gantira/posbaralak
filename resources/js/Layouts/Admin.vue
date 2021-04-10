@@ -128,6 +128,11 @@ export default {
                     icon: "mdi-information",
                     path: route("admin.statuses.index"),
                 },
+                {
+                    text: "Product",
+                    icon: "mdi-food",
+                    path: route("admin.products.index"),
+                },
             ],
             right: null,
         };
